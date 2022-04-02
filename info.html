@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div id="logo">
+          <img class="logo" src="img/logo.png"> 
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/home">หน้าเเรก</a></li>
+            <li><a href="/products">ให้เช่า</a></li>
+            <li><a href="/about">รายการเเนะนำ</a></li>
+            <li><a href="/about">เกี่ยวกับเรา</a></li>
+            <li><a href="/about">ติดต่อเรา</a></li>
+            <li><a href="/about">ข่าว</a></li>
+            <li id="post"><a href="/login" >+ลงประกาศ</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+          <li><a href="/home">หน้าเเรก</a></li>
+            <li><a href="/products">ให้เช่า</a></li>
+            <li><a href="/about">รายการเเนะนำ</a></li>
+            <li><a href="/about">เกี่ยวกับเรา</a></li>
+            <li><a href="/about">ติดต่อเรา</a></li>
+            <li><a href="/about">ข่าว</a></li>
+            <li id="post"><a href="/login" >+ลงประกาศ</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+        </div>
+      </header>
+
+
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+            <div class="profile">
+                <h3>ข้อมูลส่วนตัว</h3><br>
+                <a href='#' onclick='edit()'><img src="img/computer.png" id="edit-save"/></a>
+                <!-- <img src="img/logo.png" alt="profile_picture"> -->
+            </div>
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="item">ข้อมูลส่วนตัว</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                        <span class="item">รายการโปรด</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-clear-outline"></ion-icon></span>
+                        <span class="item">ตารางเปรียบเทียบ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="item">ออกจากระบบ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+   
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

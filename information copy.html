@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+   <!-- ส่วนของบาร์ข้างบน -->
+   <header>
+    <nav class="main-nav">
+      <ul class="navlinks">
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">ให้เช่า</a></li>
+        <li><a href="#">รายการแนะนำ</a></li>
+        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+        <li><a href="#">ข่าว</a></li>
+        <li><a href="#" class="contact">+ ลงประกาศ</a></li>
+        <li><a href="#">เข้าสู่ระบบ / <a href="#">สมัครสมาชิก</a></a></li>
+      </ul>
+      <div class="logo">
+        <img src="img/logo.png" alt="" id="vv">
+      </div>
+    </nav>
+  </header>
+  <!-- ส่วนของบาร์ข้างบน -->
+  
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+            <div class="profile">
+                <h3>ข้อมูลส่วนตัว</h3><br>
+                <a href='#' onclick='edit()'><img src="img/computer.png" id="edit-save"/></a>
+                <!-- <img src="img/logo.png" alt="profile_picture"> -->
+            </div>
+            <ul>
+                <li>
+                    <a href="private.html" class="active">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="item">ข้อมูลส่วนตัว</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                        <span class="item">รายการโปรด</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-clear-outline"></ion-icon></span>
+                        <span class="item">ตารางเปรียบเทียบ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="item">ออกจากระบบ</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+     
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

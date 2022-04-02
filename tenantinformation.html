@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Side Navigation Bar with Curved Borders</title>
+	<link rel="stylesheet" type="text/css" href="styless.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+
+    <header>
+        <nav class="main-nav">
+          <ul class="navlinks">
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">ให้เช่า</a></li>
+            <li><a href="#">รายการแนะนำ</a></li>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+            <li><a href="#">ข่าว</a></li>
+            <li><a href="#" class="contact">+ ลงประกาศ</a></li>
+            <li><a href="#">เข้าสู่ระบบ / <a href="#">สมัครสมาชิก</a></a></li>
+          </ul>
+          <div class="logo">
+            <img src="img/logo.png" alt="" id="vv">
+          </div>
+        </nav>
+      </header>
+      <!-- ส่วนของบาร์ข้างบน -->
+
+    <div class="wrapper">
+	<div class="shadow"></div>
+	<div class="side_bar">
+		<div class="side_bar_top">
+			<!-- <div class="logo_wrap">
+				<a href="#">
+					<img src="code.png" alt="logo">
+					<span class="text">Coding Boss</span></a>
+			</div> -->
+			<div class="container">
+				<span>profile Image Upload </span>
+				<div class="avatar-upload">
+					<div class="avatar-edit">
+						<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+						<label for="imageUpload"></label>
+					</div>
+					<div class="avatar-preview">
+						<div id="imagePreview" style="background-image: url('http://i.pravatar.cc/500?img=7');">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="side_bar_menu">
+				<div class="menu"><ion-icon class="i" name="arrow-forward-outline"></ion-icon>
+				</div>
+			</div>
+		</div>
+		<div class="side_bar_bottom">
+			<ul>
+				<li class="active">
+					<span class="top_curve"></span>
+					<a href="#">
+						<span class="icon"><ion-icon name="person-circle-outline"></ion-icon>	</span>
+						<span class="item">ข้อมูลส่วนตัว</span></a>
+					<span class="bottom_curve"></span>
+				</li>
+				<li>
+					<span class="top_curve"></span>
+					<a href="#">
+						<span class="icon"><ion-icon name="bookmarks-outline"></ion-icon></span>
+						<span class="item">รายการโปรด</span></a>
+					<span class="bottom_curve"></span>
+				</li>
+				<li>
+					<span class="top_curve"></span>
+					<a href="#">
+						<span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+						<span class="item">ตารางเปรียบเทียบ</span></a>
+					<span class="bottom_curve"></span>
+				</li>
+				<li>
+					<span class="top_curve"></span>
+					<a href="1.html">
+						<span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+						<span class="item">ออกจากระบบ</span></a>
+					<span class="bottom_curve"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!--ข้อมูลส่วนตัว-->
+	<div class="main_container">
+	<div class="cards">
+    <div class="cardss card-1">
+	  <p  class="cardss__name">ชื่อ : </p>
+      <p class="cardss__title">รหัสประจำตัวผู้ใช้งาน : </P>
+      <p class="cardss__apply">รหัสผ่าน : ********   
+        <a class="cardss__link" href="#">แก้ไขรหัสผ่าน</a>
+      </p>
+    </div>
+  </div>
+	
+		
+	</div>
+</div>
+
+<script src="scripts.js"></script>
+<script src="profile.js"></script>
+
+
+
+<!-- ส่วนของfooter-->
+<footer>
+    <div class="contacts">
+      <h3>ติดต่อและรับข้อมูลข่าวสารได้ที่</h3>
+      <a href="index.html"><img src="img/tik.png" alt="" id="bb"></a>
+      <a href="index.html"><img src="img/line.png" alt="" id="cc"></a>
+      <a href="index.html"><img src="img/facebook (3).png" alt="" id="dd"></a>
+      <a href="index.html"><img src="img/youtube.png" alt="" id="ee"></a>
+    </div>
+    <div class="image">
+      <img src="img/img_01.png" alt="" id="aa">
+    </div>
+    <hr align = "center" size= "2" width= "100%"> 
+    <h4>© Copyright 2021</h4>
+ </footer>
+ <!-- ส่วนของfooter-->
+  
+</body>
+</html>
